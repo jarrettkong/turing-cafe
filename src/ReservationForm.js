@@ -15,7 +15,13 @@ export class ReservationForm extends Component {
 
 	handleSubmit = e => {
 		e.preventDefault();
-		console.log(this.state);
+		this.props.addReservation(this.state);
+		this.setState({
+			name: '',
+			date: '',
+			time: '',
+			number: 1
+		});
 	};
 
 	render() {
