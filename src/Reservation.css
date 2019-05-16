@@ -4,7 +4,6 @@
 	color: teal;
 	border: 5px solid teal;
 	border-radius: 10px;
-	width: 200px;
 	padding: 15px;
 }
 
@@ -18,5 +17,5 @@
 	color: white;
 	width: 175px;
 	height: 25px;
-  font-size: 15px;
+	font-size: 15px;
 }
