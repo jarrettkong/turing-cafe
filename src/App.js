@@ -28,6 +28,13 @@ class App extends Component {
 		this.setState({ reservations: [...this.state.reservations, newResercation] });
 	};
 
+	deleteReservation = async id => {
+		await fetch(`http://localhost:3001/api/v1/reservations/${id}`, {
+			method: 'DELETE'
+		});
+		this.getExistingReservations();
+	};
+
 	render() {
 		return (
 			<div className="App">
@@ -36,7 +43,7 @@ class App extends Component {
 					<ReservationForm addReservation={this.addReservation} />
 				</div>
 				<div className="resy-container">
-					<ReservationContainer reservations={this.state.reservations} />
+					<ReservationContainer reservations={this.state.reservations} deleteReservation={this.deleteReservation} />
 				</div>
 			</div>
 		);
