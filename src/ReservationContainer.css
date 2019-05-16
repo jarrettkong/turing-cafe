@@ -1,6 +1,7 @@
 .ReservationContainer {
 	display: grid;
-	width: 1300px;
+	width: 80vw;
+	margin: auto;
 	grid-template-columns: repeat(auto-fit, 240px);
 	grid-gap: 20px;
 }

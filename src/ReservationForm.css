@@ -1,0 +1,19 @@
+.ReservationForm {
+	max-width: 1300px;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(5, 200px);
+	margin-bottom: 50px;
+}
+
+.ReservationForm input {
+	height: 35px;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.submit-btn {
+	height: 35px;
+	background-color: teal;
+	color: white;
+}
